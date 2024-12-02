@@ -33,7 +33,7 @@
   --s-color: #777;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Mulish', sans-serif;
   margin: 0;
   background-color: #eee;
 }
@@ -181,8 +181,7 @@ form .txt_field {
   transition: 0.5s;
 }
 .txt_field input:focus ~ label,
-.txt_field input:valid ~ label 
-{
+.txt_field input:valid ~ label {
   top: -5px;
   color: #2691d9;
 }
@@ -232,7 +231,6 @@ input[type="submit"]:hover {
   text-decoration: underline;
 }
 
-
 /* Start Content */
 .up {
   position: fixed;
@@ -247,6 +245,12 @@ input[type="submit"]:hover {
   transition: 0.2s;
   width: 30px;
   text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+.up:hover {
+  bottom: 20px;
+  transform: translateY(-5px); 
+  opacity: 0.8;
 }
 .show-up {
   right: 5px;
@@ -493,6 +497,33 @@ main {
 }
 .section button {
   width: 80px;
+}
+.wrapper .section:nth-child(1) .visit:hover {
+  background-color: #cd853f ; /* لون أفتح عند hover */
+  color: white;
+}
+.wrapper .section:nth-child(2) .visit:hover {
+  background-color: #3399ff; /* لون أفتح عند hover */
+  color: white;
+}
+.wrapper .section:nth-child(3) .visit:hover {
+  background-color: #666666; /* لون أفتح عند hover */
+  color: white;
+}
+.wrapper .section:nth-child(4) .visit:hover {
+  background-color: #3399e6; /* لون أفتح عند hover */
+  color: white;
+}
+.wrapper .section:nth-child(5) .visit:hover {
+  background-color: #f7c50f; /* لون أفتح عند hover */
+  color: white;
+}
+.wrapper .section:nth-child(6) .visit:hover {
+  background-color: #66e29e; /* لون أفتح عند hover */
+  color: white;
+}
+.btn:hover{
+  opacity: 0.8 !important;
 }
 /* End Section */
 /* Start Testimonials */
@@ -831,7 +862,7 @@ main {
   .our-skills img {
     display: none;
   }
-  .our-skills .progress{
+  .our-skills .progress {
     width: 300px;
   }
   /* Media Skills  */
