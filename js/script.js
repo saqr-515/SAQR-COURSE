@@ -1,3 +1,4 @@
+AOS.init();
 let namePage = [
   "java",
   "webDevelopment",
