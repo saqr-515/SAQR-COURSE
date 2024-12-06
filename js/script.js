@@ -72,3 +72,4 @@ document.querySelector('form').addEventListener('submit', function(e) {
       alert('يرجى ملء جميع الحقول المطلوبة.');
   }
 });
+AOS.init();
