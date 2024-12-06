@@ -58,3 +58,16 @@ function startCount(el) {
         el.textContent = count; 
     }, 2000 / goal); 
 }
+$('.collapse').on('show.bs.collapse', function () {
+  $(this).parent().find('.card-header').addClass('active');
+}).on('hide.bs.collapse', function () {
+  $(this).parent().find('.card-header').removeClass('active');
+});
+document.querySelector('form').addEventListener('submit', function(e) {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  if (!name || !email) {
+      e.preventDefault();
+      alert('يرجى ملء جميع الحقول المطلوبة.');
+  }
+});
