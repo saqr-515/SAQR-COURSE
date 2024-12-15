@@ -522,9 +522,22 @@ main {
   background-color: #66e29e; /* لون أفتح عند hover */
   color: white;
 }
+.wrapper .section:nth-child(7) .visit:hover {
+  background-color: #666666; /* لون أفتح عند hover */
+  color: white;
+}
+.wrapper .section:nth-child(8) .visit:hover {
+  background-color: #3399e6; /* لون أفتح عند hover */
+  color: white;
+}
+.wrapper .section:nth-child(9) .visit:hover {
+  background-color: #cd853f; /* لون أفتح عند hover */
+  color: white;
+}
 .btn:hover{
   opacity: 0.8 !important;
 }
+
 /* End Section */
 /* Start Testimonials */
 .testimonials {
