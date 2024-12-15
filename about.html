@@ -6,25 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - SAQR World</title>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/styleLogin.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- Start Header -->
     <header class="text-white bg-dark">
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <div class="container">
+            <div class="container ">
                 <a class="navbar-brand" href="index.html">
                     <div class="logo d-flex align-items-center">
                         <img src="images/logo.png" alt="SAQR WORLD Logo" width="50">
-                        <span>SAQR WORLD</span>
+                        <span>AQR WORLD</span>
                     </div>
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#courses">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="login.html">LogIn</a>
                         </li>
                     </ul>
                 </div>
@@ -48,80 +68,36 @@
     <!-- Start Courses Section -->
     <div class="container my-5" id="courses">
         <h2 class="text-center">Our Courses</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/java.jpeg" class="card-img-top" alt="Java Course">
-                    <div class="card-body">
-                        <h5 class="card-title">Java Programming</h5>
-                        <p class="card-text">A comprehensive course covering Java programming language.</p>
-                        <p><strong>Duration:</strong> 12 weeks</p>
-                        <p><strong>Instructor:</strong> John Smith</p>
-                        <a href="#" class="btn btn-primary">Enroll Now</a>
-                    </div>
-                </div>
+        <div class="wrapper d-g gap-20 mt-60 container-sm">
+            <div class="section p-20 rad-10 bg-white ta-c arb">
+                <h2 class="mt-0 mb-10">Java </h2>
+                <img class="w-full-mobile rad-30 pt-10 pb-10 mb-10 mt-10" src="images/java.jpeg" alt="">
+                <p class="mt-0 mb-20  fs-15">A comprehensive course covering Java programming language.</p>
+                <p><strong>Instructor:</strong> John Smith</p>
+                <p><strong>Duration:</strong> 12 weeks</p>
+                <p>Rating: 4.5 Stars</p>
+                <p>Level: Intermediate</p>
+                <button class="btn c-white btn-shape btn-arb visit">Visit</button>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/webdevelopment.png" class="card-img-top" alt="Web Development Course">
-                    <div class="card-body">
-                        <h5 class="card-title">Web Development</h5>
-                        <p class="card-text">Learn HTML, CSS, and JavaScript to build stunning websites.</p>
-                        <p><strong>Duration:</strong> 12 weeks</p>
-                        <p><strong>Instructor:</strong> John Smith</p>
-                        <a href="#" class="btn btn-primary">Enroll Now</a>
-                    </div>
-                </div>
+            <div class="section p-20 rad-10 bg-white ta-c edu">
+                <h2 class="mt-0 mb-10">Web Development</h2>
+                <img class="w-full-mobile rad-30 pt-10 pb-10 mb-10 mt-10" src="images/webdevelopment.png" alt="">
+                <p class="mt-0 mb-20  fs-15">A comprehensive course covering HTML, CSS, and JavaScript.</p>
+                <p><strong>Instructor:</strong> John Smith</p>
+                <p><strong>Duration:</strong> 12 weeks</p>
+                <p>Rating: 4.5 Stars</p>
+                <p>Level: Intermediate</p>
+                <button class="btn c-white btn-shape btn-edu visit">Visit</button>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/datascience.jpeg" class="card-img-top" alt="Data Science Course">
-                    <div class="card-body">
-                        <h5 class="card-title">Data Science</h5>
-                        <p class="card-text">Learn about data analysis, machine learning, and big data.</p>
-                        <p><strong>Duration:</strong> 10 weeks</p>
-                        <p><strong>Instructor:</strong> Emily Johnson</p>
-                        <a href="#" class="btn btn-primary">Enroll Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/python.jpeg" class="card-img-top" alt="Python Course">
-                    <div class="card-body">
-                        <h5 class="card-title">Python Programming</h5>
-                        <p class="card-text">Explore the principles of Python programming and data analysis.</p>
-                        <p><strong>Duration:</strong> 8 weeks</p>
-                        <p><strong>Instructor:</strong> Alex Brown</p>
-                        <a href="#" class="btn btn-primary">Enroll Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/cccc.png" class="card-img-top" alt="C++ Course">
-                    <div class="card-body">
-                        <h5 class="card-title">C++ Programming</h5>
-                        <p class="card-text">Learn the fundamentals of C++ programming and object-oriented design.</p>
-                        <p><strong>Duration:</strong> 10 weeks</p>
-                        <p><strong>Instructor:</strong> Sarah Connor</p>
-                        <a href="#" class="btn btn-primary">Enroll Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/graphicdesign.jpeg" class="card-img-top" alt="Graphic Design Course">
-                    <div class="card-body">
-                        <h5 class="card-title">Graphic Design</h5>
-                        <p class="card-text">A comprehensive course covering graphic design principles and software.</p>
-                        <p><strong>Duration:</strong> 8 weeks</p>
-                        <p><strong>Instructor:</strong> Alex Brown</p>
-                        <a href="#" class="btn btn-primary">Enroll Now</a>
-                    </div>
-                </div>
+            <div class="section p-20 rad-10 bg-white ta-c invst">
+                <h2 class="mt-0 mb-10">Data Science</h2>
+                <img class="w-full-mobile rad-30 pt-10 pb-10 mb-10 mt-10" src="images/datascience.jpeg" alt="">
+                <p class="mt-0 mb-20  fs-15">Learn about data analysis, machine learning, and big data.</p>
+                <p><strong>Instructor:</strong> Emily Johnson</p>
+                <p><strong>Duration:</strong> 10 weeks</p>
+                <p>Rating: 4.0 Stars</p>
+                <p>Level: Advanced</p>
+                <button class="btn c-white btn-shape btn-invst visit">Visit</button>
             </div>
         </div>
     </div>
@@ -165,6 +141,9 @@
 
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
